@@ -1,0 +1,35 @@
+# Archivos compilados
+*.o
+*.obj
+*.exe
+programa
+*.out
+
+# Archivos de pesos y datos (CSV)
+weights_organized/
+weights_layers/
+*.csv
+
+# Archivos de configuración del IDE
+.vscode/
+.idea/
+*.cbproj
+*.layout
+*.depend
+
+# Archivos temporales
+*.tmp
+*.temp
+*~
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de build
+build/
+bin/
+obj/
+
+# Archivos de logs
+*.log
