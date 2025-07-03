@@ -17,6 +17,9 @@ namespace FileIO {
     // Load vector from CSV file (single column or row)
     std::vector<double> load_vector_from_csv(const std::string& filename, bool has_header = false);
     
+    // Load vector from CSV file as Matrix (single row vector)
+    Matrix load_vector_as_matrix(const std::string& filename, bool has_header = false);
+    
     // Save matrix to CSV file
     void save_matrix_to_csv(const Matrix& matrix, const std::string& filename);
     

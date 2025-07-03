@@ -10,6 +10,8 @@ g++ -o programa main.cpp \
     src/matrix/matrix_ops.cpp \
     src/matrix/activation_functions.h.cpp \
     src/utils/file_io.cpp \
+    src/transformer/layer_norm.cpp \
+    src/transformer/embedding.cpp \
     -Iinclude/ \
     -std=c++17 \
     -O2
