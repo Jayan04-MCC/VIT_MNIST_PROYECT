@@ -183,4 +183,18 @@ namespace FileIO {
         file.close();
     }
 
+    Matrix load_vector_as_matrix(const std::string& filename, bool has_header) {
+        // Load as regular vector first
+        std::vector<double> vector_data = load_vector_from_csv(filename, has_header);
+        
+        // Create a 1xN matrix (row vector)
+        Matrix result(1, vector_data.size());
+        
+        for (size_t i = 0; i < vector_data.size(); ++i) {
+            result(0, i) = vector_data[i];
+        }
+        
+        return result;
+    }
+
 }
